@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tony Siu | IT Service Delivery Expert & Founder of Fooncore Solutions</title>
+<!-- Google Fonts for a modern look -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  /* Reset styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d; /* Darker background for more IT feeling */
+    color: #e0e0e0; /* Light text for contrast */
+    line-height: 1.6;
+  }
+
+  a {
+    color: #00C7E6; /* Bright cyan for links */
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #66CCFF;
+    text-decoration: underline;
+  }
+
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+  /* Header / Hero */
+  header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1a1a1a; /* Slightly lighter dark for header */
+    animation: fadeInDown 1s ease-out;
+  }
+
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #00C7E6; /* Cyan for modern tech look */
+    letter-spacing: 2px;
+  }
+
+  header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #b0bec5;
+  }
+
+  /* About section */
+  section.about {
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    text-align: justify;
+  }
+
+  section.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00C7E6;
+    border-bottom: 3px solid #00C7E6;
+    display: inline-block;
+    padding-bottom: 8px;
+  }
+
+  section.about p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+
+  /* Skills & services sections */
+  section.skills, section.services {
+    margin-top: 50px;
+  }
+
+  section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00C7E6;
+    text-align: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background-color: #1a1a1a; /* Dark card background for tech feel */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333; /* subtle border for depth */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+    border-color: #00C7E6;
+  }
+
+  .card h3 {
+    margin-bottom: 15px;
+    color: #90CAF9;
+    font-size: 1.3em;
+  }
+
+  /* Contact section */
+  section.contact {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  section.contact h2 {
+    margin-bottom: 20px;
+    color: #00C7E6;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.1em;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #1a1a1a;
+    color: #999;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+  }
+
+  /* Highlight Fooncore Solutions in the main text with specific color */
+  .highlight {
+    color: #00C7E6; /* Consistent with logo color for professional feel */
+    font-weight: bold;
+  }
+
+  /* Responsive */
+  @media(max-width: 768px){
+    header h1 {
+      font-size: 2em;
+    }
+  }
+
+  /* Animations */
+  @keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Tony Siu</h1>
+  <p>IT Service Delivery Manager & Founder of <span class="highlight">Fooncore Solutions</span></p>
+</header>
+
+<div class="container">
+  <!-- About Me -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an accomplished IT professional with over <strong>20 years</strong> of experience in managing complex infrastructure, leading technical teams, and delivering enterprise-level IT solutions. My expertise spans supporting large organizations with a substantial international team, ensuring seamless operations, robust security, and scalable systems. I am skilled in designing innovative IT architectures, optimizing support services, and negotiating strategic vendor partnerships to maximize efficiency and value. With a strong focus on security and compliance, I am committed to delivering reliable, scalable, and secure technology solutions that foster organizational growth.
+    </p>
+    <p>
+      I am the founder of <span class="highlight">Fooncore Solutions</span>, a company dedicated to providing cutting-edge IT services and infrastructure. Explore our website at <a href="http://www.fooncore.com" target="_blank" rel="noopener noreferrer">www.fooncore.com</a> to learn more about our offerings.
+    </p>
+  </section>
+
+  <!-- Skills & Expertise -->
+  <section class="skills" id="skills">
+    <h2>Skills & Expertise</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Infrastructure Management</h3>
+        <p>Windows Server, VMware, Hyper-V, Cloud Platforms (Azure, AWS), SAN & NAS storage solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Support & Operations</h3>
+        <p>System administration, disaster recovery, backup solutions, security protocols, and incident management.</p>
+      </div>
+      <div class="card">
+        <h3>Security & Compliance</h3>
+        <p>Network security, firewalls, VPNs, endpoint protection, and compliance standards.</p>
+      </div>
+      <div class="card">
+        <h3>Project Leadership</h3>
+        <p>IT project planning, deployment, vendor negotiations, and team leadership.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>What I Offer</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>IT Infrastructure Consulting</h3>
+        <p>Designing and implementing scalable and secure IT infrastructure tailored to your business needs.</p>
+      </div>
+      <div class="card">
+        <h3>Support & Maintenance</h3>
+        <p>Providing ongoing support, troubleshooting, and system management to ensure optimal performance.</p>
+      </div>
+      <div class="card">
+        <h3>Security Solutions</h3>
+        <p>Implementing comprehensive security measures to protect your organization’s digital assets.</p>
+      </div>
+      <div class="card">
+        <h3>Project Management</h3>
+        <p>Leading IT projects from planning to execution, ensuring on-time delivery and quality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-details">
+      <p>Email: <a href="mailto:tony@tonysiu.com">tony@tonysiu.com</a></p>
+      <p>Location: Edmonton, AB, Canada</p>
+    </div>
+  </section>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2026 Tony Siu. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
