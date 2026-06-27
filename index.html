@@ -267,10 +267,13 @@
     </div>
   </section>
 
-  <!-- Contact Form with Obfuscation -->
+  <!-- Contact Form with Obfuscation & Redirect -->
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
     <form class="contact-form" id="contactForm" method="POST" action="https://formsubmit.co/tony@tonysiu.com">
+      <!-- Redirect to confirmation page after submit -->
+      <input type="hidden" name="_next" value="confirmation.html" />
+      <!-- Obfuscate email parts (optional, not needed here if static URL is used) -->
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <input type="text" name="subject" placeholder="Subject" required />
@@ -284,19 +287,6 @@
 <footer>
   <p>&copy; 2026 Tony Siu. All rights reserved.</p>
 </footer>
-
-<!-- Optional: Remove the dynamic script if using static action URL -->
-<!--
-<script>
-  // Obfuscate email parts
-  const user = "tony";
-  const domain = "tonysiu.com";
-  const email = user + "@" + domain;
-
-  // Set the form's action URL dynamically
-  document.getElementById('contactForm').action = "https://formsubmit.co/" + email;
-</script>
--->
 
 </body>
 </html>
