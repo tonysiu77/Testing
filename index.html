@@ -271,12 +271,15 @@
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
     <form class="contact-form" id="contactForm" method="POST" action="https://formsubmit.co/tony@tonysiu.com">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="text" name="subject" placeholder="Subject" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <!-- Redirect to thankyou.html after submission -->
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html" />
+  
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <input type="text" name="subject" placeholder="Subject" required />
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
   </section>
 </div>
 
