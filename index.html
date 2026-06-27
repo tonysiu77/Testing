@@ -268,17 +268,18 @@
   </section>
 
   <!-- Contact Form with Obfuscation & Redirect -->
-  <form class="contact-form" id="contactForm" method="POST" action="https://formsubmit.co/tony@tonysiu.com">
-  <!-- Redirect to confirmation page after submission -->
-  <input type="hidden" name="_next" value="confirmation.html" />
-  
-  <!-- Your existing input fields -->
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <input type="text" name="subject" placeholder="Subject" required />
-  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" id="contactForm" method="POST" action="https://formsubmit.co/tony@tonysiu.com">
+      <!-- Redirect to confirmation page after submit -->
+      <input type="hidden" name="_next" value="confirmation.html" />
+      <!-- Obfuscate email parts (optional, not needed here if static URL is used) -->
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 </div>
 
