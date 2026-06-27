@@ -270,13 +270,77 @@
   <!-- Contact Form with Obfuscation and Redirect -->
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
-    <form class="contact-form" id="contactForm" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="text" name="subject" placeholder="Subject" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <form action="https://formsubmit.co/fooncoresolutions@gmail.com" method="POST">
+
+  <!-- FormSubmit settings -->
+  <input type="hidden" name="_subject" value="New Consultation Request">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <!-- Anti-spam honeypot -->
+  <input type="hidden" name="_honey" style="display:none">
+
+  <!-- Redirect -->
+  <input type="hidden" name="_next" value="https://fooncore.github.io/Testing/thankyou.html">
+
+  <!-- Auto reply -->
+  <input type="hidden" name="_autoresponse" value="
+Dear Customer,
+
+Thank you for contacting Fooncore Solutions.
+
+We have received your consultation request.
+
+Our team will respond within 1 business day.
+
+For urgent matters, email: fooncoresolutions@gmail.com
+
+Best regards,
+Fooncore Solutions
+Your One-Stop IT Management Partner
+">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" placeholder="john@company.com" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="company">Company Name</label>
+    <input type="text" id="company" name="company" placeholder="Your company">
+  </div>
+
+  <div class="form-group">
+    <label for="message">How Can We Help? *</label>
+
+    <textarea id="message" name="message" rows="4" maxlength="500"
+      placeholder="Tell us about your IT challenges or goals..." required></textarea>
+
+    <p class="char-count">
+      <span id="char-count">0</span>/500
+    </p>
+  </div>
+
+  <p id="form-error" class="form-error" style="display:none;">
+    Something went wrong. Please try again.
+  </p>
+
+  <button type="submit" class="btn-primary" id="submit-btn">
+    <span id="btn-label">Schedule Your Consultation</span>
+  </button>
+
+  <p class="form-note">
+    We respect your privacy. Your information will never be shared.
+  </p>
+
+</form>
   </section>
 </div>
 
