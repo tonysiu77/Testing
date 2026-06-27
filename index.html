@@ -270,7 +270,7 @@
   <!-- Contact Form with Obfuscation -->
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
-    <form class="contact-form" id="contactForm" method="POST">
+    <form class="contact-form" id="contactForm" method="POST" action="https://formsubmit.co/tony@tonysiu.com">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <input type="text" name="subject" placeholder="Subject" required />
@@ -285,17 +285,18 @@
   <p>&copy; 2026 Tony Siu. All rights reserved.</p>
 </footer>
 
-<!-- JavaScript to set form action dynamically with obfuscated email -->
+<!-- Optional: Remove the dynamic script if using static action URL -->
+<!--
 <script>
   // Obfuscate email parts
   const user = "tony";
   const domain = "tonysiu.com";
   const email = user + "@" + domain;
 
-  // Set the form's action URL
-  const formActionUrl = "https://formsubmit.co/" + email;
-  document.getElementById('contactForm').action = formActionUrl;
+  // Set the form's action URL dynamically
+  document.getElementById('contactForm').action = "https://formsubmit.co/" + email;
 </script>
+-->
 
 </body>
 </html>
