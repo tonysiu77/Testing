@@ -122,9 +122,10 @@
     font-size: 1.3em;
   }
 
-  /* Contact section */
+  /* Contact section with form */
   section.contact {
     margin-top: 50px;
+    padding: 20px;
     text-align: center;
   }
 
@@ -133,12 +134,37 @@
     color: #00C7E6;
   }
 
-  .contact-details {
+  /* Contact form styling */
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    font-size: 1.1em;
+    gap: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+  }
+
+  .contact-form button {
+    padding: 12px;
+    background-color: #00C7E6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+
+  .contact-form button:hover {
+    background-color: #66CCFF;
   }
 
   /* Footer */
@@ -173,14 +199,6 @@
   @keyframes fadeInDown {
     0% { opacity: 0; transform: translateY(-20px); }
     100% { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes fadeIn {
-    to { opacity: 1; }
-  }
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
   }
 </style>
 </head>
@@ -249,13 +267,16 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Form with Obfuscation -->
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
-    <div class="contact-details">
-      <p>Email: <a href="mailto:tony@tonysiu.com">tony@tonysiu.com</a></p>
-      
-    </div>
+    <form class="contact-form" id="contactForm" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 </div>
 
@@ -263,6 +284,18 @@
 <footer>
   <p>&copy; 2026 Tony Siu. All rights reserved.</p>
 </footer>
+
+<!-- JavaScript to set form action dynamically with obfuscated email -->
+<script>
+  // Obfuscate email parts
+  const user = "tony";
+  const domain = "tonysiu.com";
+  const email = user + "@" + domain;
+
+  // Set the form's action URL
+  const formActionUrl = "https://formsubmit.co/" + email;
+  document.getElementById('contactForm').action = formActionUrl;
+</script>
 
 </body>
 </html>
