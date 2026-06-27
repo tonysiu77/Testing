@@ -267,7 +267,7 @@
     </div>
   </section>
 
-  <!-- Contact Form with Obfuscation -->
+  <!-- Contact Form with Obfuscation and Redirect -->
   <section class="contact" id="contact">
     <h2>Contact Me</h2>
     <form class="contact-form" id="contactForm" method="POST">
@@ -285,15 +285,16 @@
   <p>&copy; 2026 Tony Siu. All rights reserved.</p>
 </footer>
 
-<!-- JavaScript to set form action dynamically with obfuscated email -->
+<!-- JavaScript to set form action URL with redirect and obfuscated email -->
 <script>
   // Obfuscate email parts
   const user = "tony";
   const domain = "tonysiu.com";
   const email = user + "@" + domain;
 
-  // Set the form's action URL
-  const formActionUrl = "https://formsubmit.co/" + email;
+  // Set your redirect URL
+  const redirectUrl = "https://tonysiu77.github.io/Testing/thankyou.html"; // URL-encoded
+  const formActionUrl = "https://formsubmit.co/" + email + "?redirect=" + redirectUrl;
   document.getElementById('contactForm').action = formActionUrl;
 </script>
 
